@@ -1,0 +1,30 @@
+section#download{
+    display: flex;
+    background: url(../../assets/subscribe-bg.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: var(--color-white);
+    padding-bottom: 20rem;
+}
+.download h2{
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    padding-bottom: 1rem;
+    position: relative;
+
+}
+.download h2::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--color-white);
+    
+}

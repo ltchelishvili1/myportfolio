@@ -1,0 +1,233 @@
+#header{
+    position: relative;
+    
+    }
+.welcome{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.388);
+    font-weight: 200;
+    animation: textmove 2.5s ease  alternate;
+}
+.welcomepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.animation{
+    animation: rotation 2s infinite linear;
+    cursor: pointer;
+}
+.animation1{
+    animation: rotation1 2s infinite linear;  
+    padding-bottom: 3rem; 
+}
+.clickbegin{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.388);
+    font-weight: 200;
+   
+}
+@keyframes rotation1 {
+    0% {
+        transform: translateY(0%);
+      }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+    
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    
+}
+@keyframes textmove {
+    0%{
+        font-size: 5rem;
+       
+    }
+    50%{
+        font-size: 7rem;
+       
+    }
+    100%{
+        font-size: 5rem;
+    }
+    
+}
+
+.header{
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter:blur(5px);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.121);
+    
+}
+.header-left{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        opacity: 0%;
+        
+        animation: startt 2.8s ease  alternate;
+}
+@keyframes startt {
+    0%{ 
+        transform: translateY(-25%);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+.buttonorange{
+    border: 2px solid #0400ffd6;
+    background-color: #0400ffd6;
+    
+}
+.buttonorange:hover{
+    color: white;
+}
+
+.header h1{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.header h1 span{
+    display: block;
+    
+}
+ h1 span:nth-child(2),
+ h1 span:nth-child(3){
+    font-weight: 100;
+}
+
+
+.header p {
+    margin: 3rem 0;
+    width: 70%;
+}
+
+.header-right{
+   width: 90%;
+}
+.header-right img{
+    width: 100%;
+    margin-top: 4rem;
+    transform: translateX(5%);
+    animation: bounce1 1.8s ease infinite alternate;
+   
+    
+    
+}
+@media screen and (max-width: 900px){
+    .header-right img{
+        width: 350px;
+         
+    }
+}
+@media screen and (max-width: 769px){
+    .header h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .header {
+        flex-direction: column;
+    }
+    .header-left,
+    .header-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header-left{
+        margin-bottom: 4rem;
+    }
+    .header h1::after{
+       left: 50%;
+       transform: translateX(-50%);
+    }
+    .header-right img{
+        width: 80%;
+    }
+}
+.floating-icon{
+    background: var(--light-blue);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.floating-icon a{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mouse{
+    transform: translateY(-25%);
+    animation: bounce 0.8s ease infinite alternate;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(-25%);
+        color: var(--light-blue)
+    }
+    100%{
+        transform: translateY(25%);
+        color: #fff;
+    }
+}
+
+
+@keyframes bounce1 {
+    0%{
+        transform: translateY(-10%);
+       
+        
+    }
+    100%{
+        transform: translateY(10%);
+       
+        
+    }
+  }

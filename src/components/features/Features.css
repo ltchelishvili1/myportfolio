@@ -1,0 +1,19 @@
+.temp{
+    background: url(../../assets/subscribe-bg.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-white);
+    margin-top: -5rem;
+    
+    padding: 0;
+}
+.swiper-notification{
+    display: none;
+}
+.swiper-button-next::after{
+    margin-top: -15rem;
+}
+.swiper-button-prev::after{
+    margin-top: -15rem;
+}

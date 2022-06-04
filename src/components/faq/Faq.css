@@ -1,0 +1,14 @@
+#faq{
+    background: url(../../assets/subscribe-bg.png);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-white);
+}
+.title{
+    padding-bottom: 2rem;
+}
+.title h2{
+    padding-top: 1rem;
+    font-weight: 200;
+}

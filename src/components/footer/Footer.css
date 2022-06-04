@@ -1,0 +1,24 @@
+footer#footer{
+    background: var(--dark-blue);
+    color: #fff;
+    width: 100%;
+  padding: 5rem 0;
+}
+
+.footer h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+a{
+    font-size: 1.2rem;
+}
+.footer-contact p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}

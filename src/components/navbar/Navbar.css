@@ -1,0 +1,108 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    
+}
+.nav-links{
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-btn{
+        display: none;
+    }
+}
+.nav-links li{
+    margin-left: 1rem;
+    list-style: none;
+    
+}
+.nav-links a {
+    font-size: 1.65rem;
+    font-weight: 200;
+    color: var(--color-white);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.nav-links a:hover{
+    color: var(--light-blue);
+}
+a.btn{
+   
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 5px 8px;
+}
+a.btn-dark{
+    border: 2px solid var(--color-white);
+    background: transparent;
+}
+a.btn-orange{
+    border: 2px solid transparent;
+    background: orangered;
+    color: var(--color-white);
+}
+.navbar .menu-icons{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .nav-btn{
+        display: block;
+       
+    }
+    .nav-links{
+        display: none;
+        z-index: 111; 
+    }
+    .navbar .menu-icons{
+        display: block;
+    }
+    .navbar 
+    #nav-links-mobile,
+    .navbar 
+    #nav-links-mobile-hide{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        padding-bottom: 5px;
+        transition: all 1s;
+        
+    }
+    .navbar 
+    #nav-links-mobile{
+        animation: slide-in 1.5s ease-in-out;
+        animation-name: backgroundchange;
+        animation-duration: 2s;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter:blur(5px);
+        border-radius: 50px;
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+        
+
+    }
+    .navbar 
+    #nav-links-mobile-hide{
+        left: -100%;
+        animation: slide-out 1.5s ease-in-out;
+    }
+    .navbar 
+    #nav-links-mobile li,
+    .navbar 
+    #nav-links-mobile-hide li{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin: 0 3rem;
+    }
+    @keyframes backgroundchange {
+        from {backdrop-filter: blur(0px);}
+        to { 
+            backdrop-filter:blur(5px);
+            }
+      }
+    
+}
